@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+
+}
+#container {
+    background-color: maroon;
+    width: 100vw;
+    overflow: hidden;
+    height: 5rem;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
