@@ -1,9 +1,8 @@
 var prevUpdate = null;
 
 function updateText() {
-    console.log("updating")
     const container = document.getElementById("container")
-       // if you make a new file change below to the link
+    // if you make a new file change below to the link
     fetch("https://hjohnross.github.io/InformationBar.txt_LCB/informationBar.txt")
         .then(res => res.text())
         .then(res => {
@@ -13,9 +12,7 @@ function updateText() {
                 }
 
                 const lines = res.split('\n');
-                for(i = 0; i < lines.length; i++) {
-                    container.innerHTML += `<p>${lines[i]}</p>`
-                }
+                container.innerHTML += `<p>${lines[0]}</p>`
                 prevUpdate = res;
             }
         })
@@ -23,4 +20,4 @@ function updateText() {
 }
 
 updateText()
-setInterval(updateText, 120000)
+setInterval(updateText, 60000)
