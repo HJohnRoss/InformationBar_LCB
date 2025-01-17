@@ -6,6 +6,7 @@ function updateText() {
     fetch("https://hjohnross.github.io/InformationBar.txt_LCB/rooms/B10_165.txt")
         .then(res => res.text())
 		.then(res => {
+			console.log("updating\n")
 			//if(prevUpdate !== res) {
                 while(container.firstChild) {
                     container.firstChild.remove();
