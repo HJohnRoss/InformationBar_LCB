@@ -20,4 +20,4 @@ function updateText() {
 }
 
 updateText()
-setInterval(updateText, 10000)
+//setInterval(updateText, 10000)
